@@ -16,8 +16,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: ()
-- Live Site URL: ()
+- Solution URL: (https://www.frontendmentor.io/solutions/bootstrap-with-little-css-properties-and-html-and-javascript-RVrOq2UJ9)
+- Live Site URL: (https://mohamedhesham221.github.io/social-media-dashboard-with-theme-switcher-master/)
 ### Built with
 
 - HTML
