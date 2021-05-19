@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
+    <link href="light.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+  
+  <title>Frontend Mentor | [social media dashboard with theme switcher master]</title>
+
+</head>
+<body>
+  <div class="top-pattern"></div>
+  <div class="container">
+    <div class="top-section d-lg-flex align-items-center">
+      <div class="cards-heading border-bottom flex-fill">
+        <h2 class="h1 fs-4 fw-bold mt-4">Social Media Dashboard</h2>
+        <p class="lead fs-6 fw-bold">Total Followers: 23,004</p>  
+      </div>
+    
+      <div class="switcher">
+        <div class="row">
+          <div class="col-6"><p class="lead fw-bold fs-6 fs-lg">Dark Mode</p></div>
+          <div class="col-6">
+            <div class="toggle border rounded-pill float-end" onclick="toggleTheme();">
+              <span class="d-block circle border rounded-circle" id="circle"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  <div class="cards text-center mt-4">
+    <div class="row">
+      <div class="col-12 col-lg-3 mb-4">
+        <div class="card-item facebook border-top border-4 rounded">
+            <img src="images/icon-facebook.svg">&nbsp;<span class="username fs-6 fw-bold">@nathanf</span>
+          <p class="lead count fw-bold fs-1"> 1987 </p>
+          <p class="follow fw-bold fs-6">Followers</p>
+          <img src="images/icon-up.svg"><p class="lead today fs-6 fw-bold d-inline-block">12 Today</p>
+        </div>
+      </div>
+      <div class="col-12 col-lg-3 mb-4">
+        <div class="card-item twitter border-top border-4 rounded">
+            <img src="images/icon-twitter.svg">&nbsp;<span class="username fs-6 fw-bold">@nathanf</span>
+            <p class="lead count fw-bold fs-1">1044</p>
+            <p class="lead follow fw-bold fs-6">Followers</p>
+          <img src="images/icon-up.svg"><p class="lead today fs-6 fw-bold d-inline-block">99 Today</p>
+        </div>
+      </div>
+      <div class="col-12 col-lg-3 mb-4">
+        <div class="card-item instagram position-relative rounded">
+            <img src="images/icon-instagram.svg">&nbsp;<span class="username fs-6 fw-bold">@realnathanf</span>
+            <p class="lead count fw-bold fs-1">11k</p>
+            <p class="lead follow fw-bold fs-6">Followers</p>
+          <img src="images/icon-up.svg"><p class="lead today fs-6 fw-bold d-inline-block">1099 Today</p>
+        </div>
+      </div>
+      <div class="col-12 col-lg-3 mb-4">
+        <div class="card-item youtube border-top border-4 rounded">
+            <img src="images/icon-youtube.svg">&nbsp;<span class="username fs-6 fw-bold">Nathan F.</span>
+            <p class="lead count fw-bold fs-1">8239</p>
+            <p class="lead follow fw-bold fs-6">Subscribers</p>
+          <img src="images/icon-down.svg"><p class="lead today-down fs-6 fw-bold d-inline-block">144 Today</p>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="cards-overview">
+      <p class="lead overview-heading fs-2 fw-bold">Overview - Today</p>
+      <div class="row">
+        <div class="col-12 col-lg-3 mb-3">
+          <div class="overview-item rounded">
+            <div class="left-side float-start">
+              <p class="lead fs-6 fw-bold">Page Views</p>
+              <p class="lead fs-2 fw-bold">87</p>
+            </div>
+            <div class="right-side float-end">
+              <img class="float-end" src="images/icon-facebook.svg" alt="facebook"> <br>
+              <img class="mt-1" src="images/icon-up.svg"><p class="mt-4 d-inline-block lead fs-6 fs-6 fw-bolder">3%</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-3 mb-3">
+          <div class="overview-item rounded">
+            <div class="left-side float-start">
+              <p class="lead fs-6 fw-bold">Likes</p>
+              <p class="lead fs-2 fw-bold">52</p>
+            </div>
+            <div class="right-side float-end">
+              <img class="float-end" src="images/icon-facebook.svg" alt="facebook"> <br>
+              <img class="mt-1" src="images/icon-down.svg"><p class="mt-4 d-inline-block lead fs-6 fw-bolder color-red">2%</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-3 mb-3">
+          <div class="overview-item rounded">
+            <div class="left-side float-start">
+              <p class="lead fs-6 fw-bold">Likes</p>
+              <p class="lead fs-2 fw-bold">5462</p>
+            </div>
+            <div class="right-side float-end">
+              <img class="float-end" src="images/icon-instagram.svg" alt="instagram"> <br>
+              <img class="mt-1" src="images/icon-up.svg"><p class="mt-4 d-inline-block lead fs-6 fw-bolder">2257%</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-3 mb-3">
+          <div class="overview-item rounded">
+            <div class="left-side float-start">
+              <p class="lead fs-6 fw-bold">Profile Views</p>
+              <p class="lead fs-2 fw-bold">52k</p>
+            </div>
+            <div class="right-side float-end">
+              <img class="float-end" src="images/icon-instagram.svg" alt="instagram"> <br>
+              <img class="mt-1" src="images/icon-up.svg"><p class="mt-4 d-inline-block lead fs-6 fw-bolder">1375%</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-3 mb-3">
+          <div class="overview-item rounded">
+            <div class="left-side float-start">
+              <p class="lead fs-6 fw-bold">Retweets</p>
+              <p class="lead fs-2 fw-bold">117</p>
+            </div>
+            <div class="right-side float-end">
+              <img class="float-end" src="images/icon-twitter.svg" alt="twitter"> <br>
+              <img class="mt-1" src="images/icon-up.svg"><p class="mt-4 d-inline-block lead fs-6 fw-bolder">303%</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-3 mb-3">
+          <div class="overview-item rounded">
+            <div class="left-side float-start">
+              <p class="lead fs-6 fw-bold">Likes</p>
+              <p class="lead fs-2 fw-bold">507</p>
+            </div>
+            <div class="right-side float-end">
+              <img class="float-end" src="images/icon-twitter.svg" alt="twitter"> <br>
+              <img class="mt-1" src="images/icon-up.svg"><p class="mt-4 lead d-inline-block fs-6 fw-bolder">553%</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-3 mb-3">
+          <div class="overview-item rounded">
+            <div class="left-side float-start">
+              <p class="lead fs-6 fw-bold">Likes</p>
+              <p class="lead fs-2 fw-bold">107</p>
+            </div>
+            <div class="right-side float-end">
+              <img class="float-end" src="images/icon-youtube.svg" alt="youtube"> <br>
+              <img class="mt-1" src="images/icon-down.svg"><p class="mt-4 d-inline-block lead fs-6 fw-bolder color-red">19%</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-3 mb-3">
+          <div class="overview-item rounded">
+            <div class="left-side float-start">
+              <p class="lead fs-6 fw-bold">Total Views</p>
+              <p class="lead fs-2 fw-bold">1407</p>
+            </div>
+            <div class="right-side float-end">
+              <img class="float-end" src="images/icon-youtube.svg" alt="youtube"> <br>
+              <img class="mt-1" src="images/icon-down.svg"><p class="mt-4 d-inline-block lead fs-6 fw-bolder color-red">12%</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+</div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Mohamed Hesham</a>.
+  </div>
+  <script>
+    function toggleTheme() {
+      let circle = document.getElementById("circle"),
+      light = document.querySelector("link[href='light.css']"),
+      dark = document.querySelector("link[href='dark.css']");
+      circle.classList.toggle("move");
+        light ? light.href = "dark.css" : dark ? dark.href = "light.css" :  "";
+    };
+
+  </script>
+</body>
+</html>

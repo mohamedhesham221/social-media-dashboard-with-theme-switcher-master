@@ -1,0 +1,53 @@
+:root {
+    /*dark*/
+    --toggleDarkBG: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%)); 
+    --darkBG: hsl(230, 17%, 14%);
+    --topDarkBgPattern: hsl(232, 19%, 15%);
+    --cardDarkBG: hsl(228, 28%, 20%);
+    --desaturatedBlueText: hsl(228, 34%, 66%);
+    --WhiteText: hsl(0, 0%, 100%);
+    --hover : hsla(228, 34%, 66%, 0.301);
+}
+body,
+.circle {
+    background-color: var(--darkBG);
+}
+.cards-heading {
+    border-bottom-color: var(--desaturatedBlueText) !important;
+}
+.cards-heading h2,
+.count,
+.left-side p:last-child  {
+    color: var(--WhiteText);
+}
+.cards-heading p,
+.switcher p,
+.left-side p:first-child {
+    color: var(--desaturatedBlueText);
+}
+.toggle {
+    background-image: var(--toggleDarkBG);
+}
+.card-item,
+.overview-item {
+    background-color: var(--cardDarkBG);
+    cursor: pointer;
+}
+.card-item:hover,
+.overview-item:hover {
+    background-color: var(--hover);
+}
+.username,
+.follow,
+.overview-heading
+ {
+    color: var(--desaturatedBlueText);
+}
+.attribution,
+.attribution a { color: hsl(228, 29%, 93%) !important; }
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+    .top-pattern {
+        background-color: var(--topDarkBgPattern);
+    }
+}

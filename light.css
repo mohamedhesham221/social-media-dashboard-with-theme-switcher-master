@@ -1,0 +1,53 @@
+:root {
+    /*light*/
+    --toggleBG: hsl(230, 22%, 74%);
+    --whiteBG: hsl(0, 0%, 100%);
+    --topBgPattern: hsl(225, 100%, 98%);
+    --cardBG: hsl(227, 47%, 96%);
+    --darkGrayishBlueText: hsl(228, 12%, 44%);
+    --veryDarkBlueText: hsl(230, 17%, 14%);
+    --hover: hsla(230, 22%, 74%, 0.63);
+}
+body,
+.circle {
+    background-color: var(--whiteBG);
+}
+.cards-heading {
+    border-bottom-color: var(--darkGrayishBlueText) !important;
+}
+.cards-heading h2,
+.count,
+.left-side p:last-child  {
+    color: var(--veryDarkBlueText);
+}
+.cards-heading p,
+.switcher p,
+.left-side p:first-child {
+    color: var(--darkGrayishBlueText);
+}
+.toggle {
+    background-color: var(--toggleBG);
+}
+.card-item,
+.overview-item {
+    background-color: var(--cardBG);
+    cursor: pointer;
+}
+.card-item:hover,
+.overview-item:hover {
+    background-color: var(--hover);
+}
+.username,
+.follow,
+.overview-heading
+{
+    color: var(--darkGrayishBlueText);
+}
+.attribution,
+.attribution a { color: hsl(228, 87%, 9%) !important; }
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+    .top-pattern {
+        background-color: var(--topBgPattern);
+    }
+}
